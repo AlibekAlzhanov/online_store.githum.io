@@ -94,7 +94,7 @@ export const ProductBlock: React.FC<ProductBlockProps> = ({
                 fill="white"
               />
             </svg>
-            <span>Добавить</span>
+            <span>Қосу</span>
             {addedCount > 0 && <i>{addedCount}</i>}
           </button>
         </div>
