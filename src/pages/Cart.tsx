@@ -17,7 +17,7 @@ const Cart: React.FC = () => {
   )
 
   const onClickClear = () => {
-    if (window.confirm('Себетті тазалау?')) {
+    if (window.confirm('Себетті тазалайсызба?')) {
       dispatch(clearItems())
     }
   }

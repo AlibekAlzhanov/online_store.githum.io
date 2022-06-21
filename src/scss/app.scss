@@ -107,7 +107,18 @@ body {
     }
   }
 }
-
+.pay_text {
+  margin: 10px;
+  text-align: center;
+}
+.pay-btn {
+  margin-left: 45%;
+  margin-top: 10px;
+}
+.pay_search {
+  padding-left: 3pt;
+  text-align: center;
+}
 .container {
   width: $container-width;
   margin: 0 auto;
