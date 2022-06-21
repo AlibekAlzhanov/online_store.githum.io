@@ -147,7 +147,6 @@ const Cart: React.FC = () => {
             </Link>
             <div className="button pay-btn">
               <Link to="/pay">
-                {' '}
                 <span onClick={onClickPay}>Қазір төлеңіз</span>
               </Link>
             </div>
