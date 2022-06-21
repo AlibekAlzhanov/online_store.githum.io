@@ -23,6 +23,7 @@ const Cart: React.FC = () => {
   }
   const onClickPay = () => {
     window.confirm('Тауарды төлеу')
+    dispatch(clearItems())
   }
   if (!totalPrice) {
     return <CartEmpty />
@@ -145,7 +146,10 @@ const Cart: React.FC = () => {
               <span>Артқа қайту</span>
             </Link>
             <div className="button pay-btn">
-              <span onClick={onClickPay}>Қазір төлеңіз</span>
+              <Link to="/">
+                {' '}
+                <span onClick={onClickPay}>Қазір төлеңіз</span>
+              </Link>
             </div>
           </div>
         </div>

@@ -10,7 +10,7 @@ export const fetchProducts = createAsyncThunk<Product[], SearchProductParams>(
     const { sortBy, order, category, search, currentPage } = params
     console.log(params, 4444)
     const { data } = await axios.get<Product[]>(
-      `https://62a2da5d5bd3609cee5bd482.mockapi.io/Online`,
+      `https://62a2da5d5bd3609cee5bd482.mockapi.io/Online/`,
       {
         params: pickBy(
           {

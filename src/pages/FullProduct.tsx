@@ -16,9 +16,7 @@ const FullProduct: React.FC = () => {
   React.useEffect(() => {
     async function fetchProduct() {
       try {
-        const { data } = await axios.get(
-          'https://62a2da5d5bd3609cee5bd482.mockapi.io/Online' + id,
-        );
+        const { data } = await axios.get('https://62a2da5d5bd3609cee5bd482.mockapi.io/Online/' + id);
         setProduct(data);
       } catch (error) {
         alert('Ошибка при получении товаров!');
@@ -36,13 +34,14 @@ const FullProduct: React.FC = () => {
   return (
     <div className="container">
       <img src={Product.imageUrl} />
-      <h2>{Product.title}</h2>
-      <h4>{Product.price} тг</h4>
+      <h2>Тауар аты: {Product.title}</h2>
+      <h3>Бағасы: {Product.price} тг</h3>
       <Link to="/">
         <button className="button button--outline button--add">
           <span>Кері</span>
         </button>
       </Link>
+      
     </div>
   )
 }

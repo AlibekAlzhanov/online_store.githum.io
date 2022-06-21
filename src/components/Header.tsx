@@ -31,8 +31,8 @@ export const Header: React.FC = () => {
           <div className="header__logo">
             <img width="50" src={logoSvg} alt="Product logo" />
             <div>
-              <h1>Smart-Mall</h1>
-              <p>Электроника интернет-дүкені</p>
+              <h1>MIKO</h1>
+              <p>Декоротивті жиһаз интернет-дүкені</p>
             </div>
           </div>
         </Link>

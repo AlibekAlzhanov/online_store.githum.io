@@ -12,12 +12,8 @@ const Cart = Loadable({
   loading: () => <div>Идёт загрузка корзины...</div>,
 })
 
-const Full = React.lazy(() =>
-  import( './pages/FullProduct'),
-)
-const NotFound = React.lazy(() =>
-  import(/* webpackChunkName: "NotFound" */ './pages/NotFound'),
-)
+const FullProduct = React.lazy(() =>  import(/* webpackChunkName: "FullProduct */ './pages/FullProduct'));
+const NotFound = React.lazy(() => import(/* webpackChunkName: "NotFound" */ './pages/NotFound')) 
 
 function App() {
   return (
@@ -36,7 +32,7 @@ function App() {
           path="Product/:id"
           element={
             <Suspense fallback={<div>Идёт загрузка...</div>}>
-              <Full />
+              <FullProduct />
             </Suspense>
           }
         />
@@ -50,7 +46,7 @@ function App() {
         />
       </Route>
     </Routes>
-  )
+  );
 }
 
-export default App
+export default App;

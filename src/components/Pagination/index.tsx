@@ -18,8 +18,8 @@ export const Pagination: React.FC<PaginationProps> = ({
     nextLabel=">"
     previousLabel="<"
     onPageChange={(event) => onChangePage(event.selected + 1)}
-    pageRangeDisplayed={9}
-    pageCount={8}
+    pageRangeDisplayed={4}
+    pageCount={3}
     forcePage={currentPage - 1}
   />
 )

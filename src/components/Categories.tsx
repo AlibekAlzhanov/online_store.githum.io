@@ -5,14 +5,7 @@ type CategoriesProps = {
   onChangeCategory: (idx: number) => void
 }
 
-const categories = [
-  'Барлығы',
-  'Смартфон',
-  'Ноутбук',
-  'Теледидар',
-  'Монитор',
-  'Планшет',
-]
+const categories = ['Барлығы', 'Диван', 'Төсек', 'Камод', 'Шкаф', 'Орындықтар']
 
 export const Categories: React.FC<CategoriesProps> = React.memo(
   ({ value, onChangeCategory }) => {

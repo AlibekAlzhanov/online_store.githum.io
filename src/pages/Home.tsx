@@ -55,12 +55,8 @@ const Home: React.FC = () => {
     getProducts()
   }, [categoryId, sort.sortProperty, searchValue, currentPage])
 
-  const Products = items.map((obj: any) => (
-    <ProductBlock key={obj.id} {...obj} />
-  ))
-  const skeletons = [...new Array(6)].map((_, index) => (
-    <Skeleton key={index} />
-  ))
+  const Products = items.map((obj: any) => <ProductBlock key={obj.id} {...obj} />)
+  const skeletons = [...new Array(6)].map((_, index) => <Skeleton key={index} />)
 
   return (
     <div className="container">
